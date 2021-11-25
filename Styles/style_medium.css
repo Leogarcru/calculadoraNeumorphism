@@ -1,0 +1,20 @@
+*{
+  font-size: 36px;
+}
+
+.body-display{
+  border-radius: 60px 60px 0px 0px;
+}
+
+.main-container{
+  border-radius: 60px;
+}
+
+.body-buttons{
+  border-radius: 0px 0px 40px 40px;
+}
+
+.body-button{
+  width: 60px;
+  height: 60px;
+}
