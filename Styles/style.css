@@ -46,6 +46,12 @@ main{
   height: 25%;
   background-color: #212429;
   border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px;
+  font-size: 48px;
+  color: white;
 }
 
 .body-buttons{
