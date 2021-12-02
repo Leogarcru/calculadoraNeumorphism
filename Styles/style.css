@@ -49,9 +49,23 @@ main{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 30px;
-  font-size: 48px;
+  padding: 15px;
   color: white;
+}
+
+#cp-button{
+  width: 10%;
+  height: 100%;
+  display: hidden;
+}
+
+#bd-display{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 45px;
 }
 
 .body-buttons{
