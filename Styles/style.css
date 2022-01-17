@@ -19,11 +19,14 @@ h1{
 }
 
 main{
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
+  width: 320px;
+  height: 542px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .main-container{
