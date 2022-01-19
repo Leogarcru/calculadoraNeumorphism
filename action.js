@@ -154,11 +154,55 @@ document.addEventListener("DOMContentLoaded", function(event){
       currentOperation = "Addition";
       display_number = Number(display);
     })
+    
+    document.getElementById("sub").addEventListener("click",function(){
+      operationInCurse = true;
+      currentOperation = "Substraction";
+      display_number = Number(display);
+    })
+
+    document.getElementById("mul").addEventListener("click",function(){
+      operationInCurse = true;
+      currentOperation = "Multiply";
+      display_number = Number(display);
+    })
+
+    document.getElementById("div").addEventListener("click",function(){
+      operationInCurse = true;
+      currentOperation = "Divide";
+      display_number = Number(display);
+    })
 
     document.getElementById("equal").addEventListener("click",function(){
       if (currentOperation == "Addition"){
         display_number += Number(display);
         display = String(display_number);
+        currentOperation = "";
+      }
+      if (currentOperation == "Substraction"){
+        display_number -= Number(display);
+        display = String(display_number);
+        currentOperation = "";
+      }
+      if (currentOperation == "Multiply"){
+        display_number *= Number(display);
+        display = String(display_number);
+        currentOperation = "";
+      }
+      if (currentOperation == "Divide"){
+        display_number /= Number(display);
+        display = String(display_number);
+        currentOperation = "";
+      }
+      if (String(display).length >= 10) {
+        decimals = 9 - String(Math.trunc(display)).length;
+        if (decimals >= 0) {
+            display = Math.trunc(display) + Number((display - Math.trunc(display)).toFixed(decimals));
+        } else {
+            decimals = 0
+            display = String(display).substring(0,4) + "e" + String(String(display).length - 4);
+            // display = Math.trunc(display) + Number((display - Math.trunc(display)).toFixed(decimals));
+        }
       }
       document.getElementById("bd-display").innerText = display;
     })

@@ -128,6 +128,12 @@ main{
 }
 .body-buttons--2{
   background-color: #b5b5b5;
+  background-image: url("https://cdn-icons.flaticon.com/png/512/4024/premium/4024486.png?token=exp=1642556915~hmac=af598fc9eb56d0fa05f72a0a8cde9b19");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 6px;
+  background-position-x: 5px;
 }
 .body-buttons--3{
   background-color: #b5b5b5;
