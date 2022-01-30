@@ -19,10 +19,10 @@ h1{
 }
 
 main{
-  /* width: 100vw;
-  height: 100vh; */
+  /* width: 100vw; */
   width: 320px;
-  height: 542px;
+  height: 100vh;
+  /* height: 542px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +35,8 @@ main{
   height: 90%;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.6);
+  min-height: 472px;
+  max-height: 630px;
 }
 
 .main-body{
@@ -76,7 +78,7 @@ main{
   width: 100%;
   height: 75%;
   background-color: #212429;
-  /* visibility: hidden; */
+  user-select: none;
   border-radius: 0px 0px 20px 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
